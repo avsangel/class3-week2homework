@@ -17,30 +17,31 @@
     <title>Week 2 homework</title>
     <style>
       :root {
-        --primary-color: teal;
-        --secondary-color: rgb(255, 192, 239);
+        --primary-color: #65e8e8;
+        --secondary-color: #ee75b3;
         --text-align: center;
       }
       body {
-        margin: 60px auto;
-        max-width: 800px;
+        margin: 0px auto;
       }
       h1 {
-        color: var(--primary-color);
-        font-weight: 900;
-        font-size: 80px;
-        text-align: var(--text-align);
-        margin: 0 auto;
-      }
-      h2 {
-        color: var(--secondary-color);
+        color: pink;
         font-weight: 700;
         font-size: 50px;
         text-align: var(--text-align);
         margin: 0 auto;
       }
+      h2 {
+        color: hsl(0 0% 100% / 0.2);
+        background-clip: text;
+        background-image: linear-gradient(pink, magenta, blue);
+        font-weight: 900;
+        font-size: 80px;
+        text-align: var(--text-align);
+        margin: 0 auto;
+      }
       h3 {
-        color: var(--secondary-color);
+        color: pink;
         font-weight: 700;
         font-size: 40px;
         text-align: var(--text-align);
@@ -49,24 +50,47 @@
       .contact-button {
         background-color: var(--secondary-color);
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 25px;
       }
       .about-button {
-        background-color: var(--primary-color);
+        background-color: pink;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 25px;
       }
       .nav-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
         padding: 40px 40px 40px 40px;
       }
       a {
         color: black;
       }
       .navbar-pink {
-        background-color: pink;
+        background-color: lightpink;
+      }
+      .huskers {
+        color: hsl(0 0% 100% / 0.2);
+        background-clip: text;
+        background-image: linear-gradient(black, silver, red);
+      }
+      .pics {
+        background-color: lightpink;
+        padding: 5px 5px 5px 5px;
+      }
+      .card-title {
+        color: hsl(0 0% 100% / 0.2);
+        background-clip: text;
+        background-image: linear-gradient(pink, magenta, blue);
+        font-size: 30px;
+      }
+      .card-text {
+        color: blue;
+        font-size: 20px;
+      }
+      hr {
+        color: #ee75b3;
+        border: solid 3px;
+      }
+      .card {
+        border: none;
       }
     </style>
   </head>
@@ -94,10 +118,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Me</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html#email"> Comtact Me</a>
+                <a class="nav-link" href="about.html#email">Contact</a>
               </li>
             </ul>
           </div>
@@ -107,20 +131,121 @@
       <br />
       <h1>🤘Hi, I am</h1>
       <h2>Alesia Shope</h2>
-      <h3>🇺🇸Front End Developer, based in Nebraska!</h3>
-      <div class="nav-buttons">
-        <button class="contact-button">
-          <a href="about.html#email">Contact Me </a>
-        </button>
-        <button class="about-button"><a href="about.html"> About Me</a></button>
+      <h3>
+        🇺🇸Front End Developer, based in
+        <div class="huskers">Nebraska!</div>
+      </h3>
+
+      <div class="container d-flex justify-content-evenly nav-buttons">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-pink contact-button">
+              <a href="about.html#email"> Contact</a>
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn about-button">
+              <a href="about.html"> About </a>
+            </button>
+          </div>
+        </div>
       </div>
       <hr />
-      <div class="row" class="nav-buttons">
-        <div class="col-6">
-          <button type="button" class="btn btn-primary">Primary</button>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 pics">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/736/original/Screenshot_2023-12-30_at_4.00.14_PM.png?1703973641"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6">
+            <div>
+              <div class="card" style="width: 18rem var(--text-align)">
+                <div class="card-body">
+                  <h5 class="card-title">Tamale site</h5>
+                  <p class="card-text">
+                    To build this site I used HTML, CSS, and Javascript.
+                  </p>
+                  <button class="btn about-button" type="submit">
+                    <a
+                      href="https://mylovetamales.netlify.app"
+                      target="_blank"
+                      class="card-link"
+                      >Launch</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-6">
-          <button type="button" class="btn btn-info">Info</button>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div>
+              <div class="card" style="width: 18rem var(--text-align)">
+                <div class="card-body">
+                  <h5 class="card-title">Crafting</h5>
+                  <p class="card-text">
+                    To build this site I used HTML, CSS, CSS grid, transitions,
+                    and Javascript.
+                  </p>
+                  <button class="btn about-button" type="submit">
+                    <a
+                      href="https://my-crafts.netlify.app"
+                      target="_blank"
+                      class="card-link"
+                      >Launch</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pics">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/734/original/Screenshot_2023-12-30_at_3.53.20_PM.png?1703973229"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 pics">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/730/original/Screenshot_2023-12-17_at_8.34.24_PM.png?1703971126"
+              class="img-fluid rounded"
+              height="100px"
+            />
+          </div>
+          <div class="col-6">
+            <div>
+              <div class="card" style="width: 18rem var(--text-align)">
+                <div class="card-body">
+                  <h5 class="card-title">Weather Page</h5>
+                  <p class="card-text">
+                    To build this site I used HTML, CSS, and Javascript. I also
+                    used an integrated weather API. On load this site has
+                    current info for Lincoln, Ne but once you enter a city the
+                    page changes based on that citys current information.
+                  </p>
+                  <button class="btn about-button" type="submit">
+                    <a
+                      href="https://weeksevenproject.netlify.app"
+                      target="_blank"
+                      class="card-link"
+                      >Launch</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <hr />
