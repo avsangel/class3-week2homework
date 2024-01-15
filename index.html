@@ -14,7 +14,11 @@
     ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week 2 homework</title>
+    <title>Alesia Shope</title>
+    <meta
+      name="description"
+      content="The main page and about page of my portfolio"
+    />
     <style>
       :root {
         --primary-color: #65e8e8;
@@ -92,6 +96,17 @@
       .card {
         border: none;
       }
+      @media (max-width: 575.98px) {
+        .card-title {
+          text-align: center;
+        }
+        .card-text {
+          text-align: center;
+        }
+        .card {
+          text-align: center;
+        }
+      }
     </style>
   </head>
   <body>
@@ -156,7 +171,8 @@
           <div class="col-md-6 pics">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/736/original/Screenshot_2023-12-30_at_4.00.14_PM.png?1703973641"
-              class="img-fluid rounded"
+              alt="screenshot of my tamale site"
+              class="img-fluid rounded d-none d-lg-block"
             />
           </div>
           <div class="col-md-6">
@@ -170,6 +186,7 @@
                   <button class="btn about-button" type="submit">
                     <a
                       href="https://mylovetamales.netlify.app"
+                      title="Tamale site"
                       target="_blank"
                       class="card-link"
                       >Launch</a
@@ -193,9 +210,10 @@
                     To build this site I used HTML, CSS, CSS grid, transitions,
                     and Javascript.
                   </p>
-                  <button class="btn about-button" type="submit">
+                  <button class="btn about-button" type="submit" class="launch">
                     <a
                       href="https://my-crafts.netlify.app"
+                      title="my-crafts site"
                       target="_blank"
                       class="card-link"
                       >Launch</a
@@ -208,7 +226,8 @@
           <div class="col-md-6 pics">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/734/original/Screenshot_2023-12-30_at_3.53.20_PM.png?1703973229"
-              class="img-fluid rounded"
+              alt="screenshot of my crafts site"
+              class="img-fluid rounded d-none d-lg-block"
             />
           </div>
         </div>
@@ -219,11 +238,12 @@
           <div class="col-md-6 pics">
             <img
               src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/730/original/Screenshot_2023-12-17_at_8.34.24_PM.png?1703971126"
-              class="img-fluid rounded"
+              alt="screenshot of weather site"
+              class="img-fluid rounded d-none d-lg-block"
               height="100px"
             />
           </div>
-          <div class="col-6">
+          <div class="col-md-6">
             <div>
               <div class="card" style="width: 18rem var(--text-align)">
                 <div class="card-body">
@@ -238,6 +258,7 @@
                     <a
                       href="https://weeksevenproject.netlify.app"
                       target="_blank"
+                      title="Weather page"
                       class="card-link"
                       >Launch</a
                     >
