@@ -14,10 +14,14 @@
     ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alesia Shope</title>
+    <title>Front End Developer Alesia Shope</title>
     <meta
       name="description"
       content="The main page and about page of my portfolio"
+    />
+    <meta
+      name="description"
+      content="Alesia Shope is a front end Developer based in Nebraska! Check out my projects and contact me."
     />
     <style>
       :root {
@@ -113,9 +117,9 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-pink sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-pink fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Alesia Shope</a>
+          <a class="navbar-brand" href="#"> Alesia Shope</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -130,18 +134,28 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  title="homepage"
+                  href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" title="about page" href="about.html"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" title="projects" href="projects.html"
+                  >Projects</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Me</a>
+                <a class="nav-link" title="contact" href="contact.html"
+                  >Contact Me</a
+                >
               </li>
             </ul>
           </div>
@@ -160,12 +174,12 @@
         <div class="row">
           <div class="col">
             <button type="button" class="btn btn-pink contact-button">
-              <a href="about.html#email"> Contact</a>
+              <a href="contact.html" title="contact"> Contact</a>
             </button>
           </div>
           <div class="col">
             <button type="button" class="btn about-button">
-              <a href="about.html"> About </a>
+              <a href="about.html" title="about page"> About </a>
             </button>
           </div>
         </div>
