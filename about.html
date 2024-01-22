@@ -42,7 +42,7 @@
       p {
         font-size: 18px;
         line-height: 1.5;
-        color: blue;
+        color: #ee75b3;
       }
 
       h1 {
@@ -89,6 +89,9 @@
         text-align: center
       }
       .card-title{
+         color: hsl(0 0% 100% / 0.2);
+        background-clip: text;
+        background-image: linear-gradient(pink, magenta, blue);
         font-size: 30px;
       }
       .contact-button {
@@ -105,6 +108,12 @@
         font-size: 20px;
         color: #ee75b3;
         display: inline-flex
+      }
+      .closing{
+        color: #ee75b3;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
       }
     </style>
   </head>
@@ -167,7 +176,7 @@
             <div class="card" style="width: 18rem">
               <div class="card-body">
                 <h5 class="card-title">Alesia Shope</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">
+                <h6 class="card-subtitle mb-2 text-body-secondary-primary">
                   Front End Developer
                 </h6>
                 <p class="card-text">
@@ -231,6 +240,16 @@
           >
             <i class="fa-brands fa-etsy"></i
           ></a>
+        </div>
+        <div class="closing">
+          This project was coded by Alesia Shope and is opem-sourced on
+          <a
+            class="closing"
+            href="https://github.com/avsangel/class3-week2homework"
+            target="_blank"
+            title="project"
+            >github</a
+          >
         </div>
       </footer>
       <hr />
