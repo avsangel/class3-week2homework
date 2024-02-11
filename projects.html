@@ -79,6 +79,13 @@
         text-align: center;
         text-decoration: none;
       }
+      .grid {
+        display: grid;
+        grid-gap: 64px;
+      }
+      .grid-2-columns {
+        grid-template-columns: 1fr 1fr;
+      }
     </style>
   </head>
   <body>
@@ -200,6 +207,45 @@
                   changes based on that citys current information.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="grid grid-2-columns">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/973/original/Screenshot_2024-02-11_at_1.40.02_PM.png?1707680556"
+              alt="screenshot of Monument Travel Page"
+              class="img-fluid rounded"
+              height="100px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Monument Travel page</h5>
+              <p class="card-text">
+                This is a responsive site I created with html, css, embeds,
+                cards, and grids.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/730/original/Screenshot_2023-12-17_at_8.34.24_PM.png?1703971126"
+              alt="screenshot of weather site"
+              class="img-fluid rounded"
+              height="100px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Weather Page</h5>
+              <p class="card-text">
+                I used HTML, CSS, and Javascript to build this site. I also used
+                an integrated weather API. On load this site has current info
+                for Lincoln, Nebraska but once you enter a city the page changes
+                based on that citys current information.
+              </p>
             </div>
           </div>
         </div>
